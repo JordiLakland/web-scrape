@@ -93,6 +93,8 @@ const options = yargs
         console.log('No se han encontrado URS para el día solicitado');
     }
 
+    browser.close();
+
     return;
  }
 
@@ -153,11 +155,11 @@ async function saveExtractUrlsInExcel(arrayUrls, findUrls)
 
 async function createBrowser() 
 {
-    const args = ['--disable-infobars', '--no-default-browser-check'];
-    const excludeSwitches = ['enable-automation'];
+    const args = ['--no-default-browser-check'];
+    const excludeSwitches = ['--enable-automation'];
 
     return puppeteer.launch({
-        headless: true,
+        headless: false,
         devtools: false,
         defaultViewport: null,
         args: args,

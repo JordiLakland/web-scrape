@@ -4,11 +4,11 @@
   "description": "Scrape Script ",
   "main": "App.js",
   "repository": "git@github.com:JordiLakland/scraper_script.git",
-  "author": "Jordi Cantó Gálvez <jordi@prensalink.com>",
+  "author": "Jordi Cantó Gálvez <developsuricata@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "moment": "^2.29.1",
-    "puppeteer": "^5.5.0",
+    "puppeteer": "^14.2.0",
     "xlsx": "^0.16.9",
     "yargs": "^16.2.0"
   }
